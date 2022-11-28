@@ -3,12 +3,16 @@
   padding: 60px 0;
 }
 
-.footer .logo {
-  color: var(--second-type-color);
+.footer {
+  .logo {
+    color: var(--second-type-color);
+  }
 }
 
-.footer .container {
-  display: flex;
+.footer {
+  .container {
+    display: flex;
+  }
 }
 
 .footer__contact-list {
@@ -23,11 +27,11 @@
   font-style: normal;
   letter-spacing: 0.03em;
   transition: color var(--transition);
-}
 
-.footer__address-link:hover,
-.footer__address-link:focus {
-  color: var(--highlight-color);
+  &:hover,
+  &:focus {
+    color: var(--highlight-color);
+  }
 }
 
 .footer__mail-item {
@@ -42,11 +46,11 @@
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   transition: color var(--transition);
-}
 
-.footer__contact-link:hover,
-.footer__contact-link:focus {
-  color: var(--highlight-color);
+  &:hover,
+  &:focus {
+    color: var(--highlight-color);
+  }
 }
 
 .footer__socials-wrapper {
@@ -80,16 +84,18 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--transition), fill var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--highlight-color);
+    fill: var(--second-type-color);
+  }
 }
 
-.footer__socials-link .social-icon {
-  fill: currentColor;
-}
-
-.footer__socials-link:hover,
-.footer__socials-link:focus {
-  background-color: var(--highlight-color);
-  fill: var(--second-type-color);
+.footer__socials-link {
+  .social-icon {
+    fill: currentColor;
+  }
 }
 
 .footer__newsletter-form-wrapper {
@@ -115,29 +121,14 @@
   font-size: 20px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-}
 
-.footer__newsletter-form-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer__newsletter-form-btn {
-  background: var(--highlight-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  color: var(--second-type-color);
-  border: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  padding: 0;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer__send-icon {

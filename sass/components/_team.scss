@@ -1,4 +1,4 @@
-.team__section {
+.team {
   background: var(--third-background);
 }
 
@@ -44,12 +44,12 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--transition), color var(--transition);
-}
 
-.team__social-link:hover,
-.team__social-link:focus {
-  background-color: var(--highlight-color);
-  color: var(--second-type-color);
+  &:hover,
+  &:focus {
+    background-color: var(--highlight-color);
+    color: var(--second-type-color);
+  }
 }
 
 .team__item {
